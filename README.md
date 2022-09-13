@@ -1,6 +1,6 @@
 # eslint-config-airtech
 
-ESLint configuration to use 
+ESLint configuration to use
 
 ## Whats included?
 
@@ -50,7 +50,7 @@ Add `.prettierrc` to project root
   "semi": true,
   "tabWidth": 2,
   "trailingComma": "all",
-  "useTabs": false,
+  "useTabs": false
 }
 ```
 
@@ -70,11 +70,11 @@ end_of_line = lf
 charset = utf-8
 max_line_length = 120
 insert_final_newline = true
+trim_trailing_whitespace = true
 
 [*.md]
 max_line_length = 0
 trim_trailing_whitespace = false
-
 ```
 
 ### Add Engines
@@ -97,7 +97,7 @@ Add scripts for linting and formatting to `package.json`
 {
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md,graphql}\"",
     "format:check": "prettier --debug-check \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md,graphql}\""
   }
